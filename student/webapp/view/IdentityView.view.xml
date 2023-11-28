@@ -1,0 +1,37 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="com.sap.test.student.controller.IdentityView" displayBlock="true"><Page id="page" title="{i18n>title}">
+    <content>
+        <Input value="{student>/fName}" id="input0"/>
+        <Input value="{student>/lName}" id="input1"/>
+        <Input value="{student>/age}" id="input2"/>
+        <sap.ui.layout.form:Form editable="true" xmlns:sap.ui.layout.form="sap.ui.layout.form" id="form0">
+            <sap.ui.layout.form:formContainers>
+                <sap.ui.layout.form:FormContainer title="Student Details" id="container0">
+                    <sap.ui.layout.form:formElements>
+                        <sap.ui.layout.form:FormElement label="First Name" id="element0">
+                            <sap.ui.layout.form:fields>
+                                <Input width="100%" id="input0_1700642088981"/>
+                            </sap.ui.layout.form:fields>
+                        </sap.ui.layout.form:FormElement>
+                    </sap.ui.layout.form:formElements>
+                                        <sap.ui.layout.form:formElements >
+                        <sap.ui.layout.form:FormElement label="Last Name" id="element1">
+                            <sap.ui.layout.form:fields>
+                                <Input width="100%" id="input0_1700642088982" value="{student>/lName}"/>
+                            </sap.ui.layout.form:fields>
+                        </sap.ui.layout.form:FormElement>
+                    </sap.ui.layout.form:formElements>
+                                        <sap.ui.layout.form:formElements>
+                        <sap.ui.layout.form:FormElement label="Age" id="element2">
+                            <sap.ui.layout.form:fields>
+                                <Input width="100%" id="input0_1700642088983"/>
+                            </sap.ui.layout.form:fields>
+                        </sap.ui.layout.form:FormElement>
+                    </sap.ui.layout.form:formElements>
+                </sap.ui.layout.form:FormContainer>
+            </sap.ui.layout.form:formContainers>
+            <sap.ui.layout.form:layout>
+                <sap.ui.layout.form:ResponsiveGridLayout id="layout0"/>
+            </sap.ui.layout.form:layout></sap.ui.layout.form:Form>
+    </content>
+    </Page>
+</mvc:View>
